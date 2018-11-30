@@ -1,3 +1,6 @@
 [submodule "themes/black-and-light"]
 	path = themes/black-and-light
 	url = https://github.com/davidhampgonsalves/hugo-black-and-light-theme
+[submodule "themes/minimo"]
+	path = themes/minimo
+	url = https://github.com/MunifTanjim/minimo
