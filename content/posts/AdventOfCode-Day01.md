@@ -1,6 +1,22 @@
 ---
-title: "AdventOfCode Day01"
+title: "AdventOfCode - Day 1"
 date: 2018-12-02T01:08:19+01:00
-draft: true
+draft: false
 ---
 
+I'm trying to get back to coding and problem solving at the moment and came across [Advent Of Code](https://adventofcode.com/), which seems to be a very good project to help me get started and keep me motivated. I will try to solve the problems using `python`, and maybe `c++` or any other language if i have the time.
+
+## Day 1: Chronal Calibration
+
+### Part 1
+
+The first part of the first [problem](https://adventofcode.com/2018/day/1) was a very good starter for me. A very easy problem to refresh my knowledge about opening and reading files.
+
+```python
+with open('input.txt') as f:
+    lines = f.readlines()
+
+lines = [int(x.strip()) for x in lines]
+oneRound = sum(lines)
+print("First Star:"+str(oneRound))
+```
