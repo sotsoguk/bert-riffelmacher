@@ -1,7 +1,7 @@
 baseurl = "https://username.github.io"
 DefaultContentLanguage = "en"
 #DefaultContentLanguage = "ja"
-title = "Bert Building Blog"
+title = "Bert Riffelmacher"
 theme = "beautifulhugo"
 metaDataFormat = "yaml"
 pygmentsStyle = "monokai"
@@ -15,7 +15,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
 #  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "just another blog"
+  subtitle = "Build a beautiful and simple website in minutes"
   logo = "img/avatar-icon.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
