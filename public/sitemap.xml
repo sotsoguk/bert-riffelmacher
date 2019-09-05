@@ -3,90 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/post/20181204-aoc04/</loc>
+    <loc>/</loc>
+    <lastmod>2019-06-13T12:47:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2019-06-13T12:47:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/van-eck-sequence/</loc>
+    <lastmod>2019-06-13T12:47:09+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/20181204-aoc04/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/</loc>
+    <loc>/tags/aoc/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/post/</loc>
+    <loc>/tags/coding/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/tags/</loc>
+    <loc>/tags/python/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/tags/aoc/</loc>
+    <loc>/tags/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/tags/coding/</loc>
-    <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.bert-riffelmacher.de/tags/python/</loc>
-    <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.bert-riffelmacher.de/post/aoc2018-day03/</loc>
+    <loc>/post/aoc2018-day03/</loc>
     <lastmod>2018-12-04T01:30:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/post/adventofcode-day01/</loc>
+    <loc>/post/adventofcode-day01/</loc>
     <lastmod>2018-12-02T01:08:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/posts/adventofcode-day01/</loc>
+    <loc>/posts/adventofcode-day01/</loc>
     <lastmod>2018-12-02T01:08:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2018-12-02T01:08:19+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/post/hello-hugo/</loc>
+    <loc>/post/hello-hugo/</loc>
     <lastmod>2018-11-24T00:35:06+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/posts/hello-hugo/</loc>
+    <loc>/posts/hello-hugo/</loc>
     <lastmod>2018-11-24T00:35:06+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://www.bert-riffelmacher.de/authors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.bert-riffelmacher.de/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://www.bert-riffelmacher.de/series/</loc>
-    <priority>0</priority>
+    <loc>/categories/</loc>
   </url>
   
 </urlset>
