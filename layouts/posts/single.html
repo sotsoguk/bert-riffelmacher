@@ -15,10 +15,6 @@
 
 {{ define "main" }}
 	
-	{{ if or .Params.math .Site.Params.math }}
-	{{ partial "math.html" . }}
-	{{ end }}
-	
 	
 	{{- if (or .Params.images .Params.featuredImg) }}
 	<div class="bg-img"></div>
