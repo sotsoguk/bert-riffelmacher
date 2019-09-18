@@ -16,7 +16,7 @@ und das in iOS integrierte Tool *Shortcuts* (Kurzbefehle).
 Um den Server überhaupt über WOL aufwecken zu können, muss die entsprechende Option im BIOS aktiviert werden. Dann benötigt man noch die IP und MAC Adresse des
 Servers. In Ubuntu können über `sudo ifconfig -a` die Netzwerkschnittstellen ausgegeben werden. Seit einiger Zeit wird die primäre Ethernet Schnittstelle nicht mehr
 als `eth0` bezeichnet, den entsprechenden Eintrag finde ich immer über die IP Adresse. Bei mir ist es `enp3s0`. Unter `HWaddr` findet man die MAC Adresse.
-![wol configuration](img/IMG_7800.jpg)
+![wol configuration](/img/IMG_7800.jpg)
 
 
 
