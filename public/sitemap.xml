@@ -3,6 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.bert-riffelmacher.de/</loc>
+    <lastmod>2019-09-18T13:09:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bert-riffelmacher.de/post/2019-09-19-server-ios/</loc>
+    <lastmod>2019-09-18T13:09:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.bert-riffelmacher.de/post/</loc>
+    <lastmod>2019-09-18T13:09:00+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.bert-riffelmacher.de/post/20181204-aoc04/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
   </url>
@@ -13,17 +28,7 @@
   </url>
   
   <url>
-    <loc>https://www.bert-riffelmacher.de/</loc>
-    <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://www.bert-riffelmacher.de/tags/coding/</loc>
-    <lastmod>2018-12-05T01:40:17+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.bert-riffelmacher.de/post/</loc>
     <lastmod>2018-12-05T01:40:17+01:00</lastmod>
   </url>
   

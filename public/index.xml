@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
     <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
-    <lastBuildDate>Wed, 05 Dec 2018 01:40:17 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 18 Sep 2019 13:09:00 +0200</lastBuildDate>
     
 	<atom:link href="https://www.bert-riffelmacher.de/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linux Server vom iPhone aufwecken</title>
+      <link>https://www.bert-riffelmacher.de/post/2019-09-19-server-ios/</link>
+      <pubDate>Wed, 18 Sep 2019 13:09:00 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/post/2019-09-19-server-ios/</guid>
+      <description>Unter meinem Schreibtisch steht ein betagter, aber immer noch gut funktionierender HP NL54 Server der mit UbuntuServer läuft. Da er aufgrund seines Alters nicht sehr energieeffizient ist wird er nur bei Bedarf ein- und ausgeschalten. Vom Desktop aus geht das über wol.exe und ein kleines Skript. Neuerdings aber auch vom iPhone aus, was wirklich sehr praktisch ist. Man braucht dafür nicht mehr als das kostenlose Tool mochaWOL und das in iOS integrierte Tool Shortcuts (Kurzbefehle).</description>
+    </item>
     
     <item>
       <title>AdventOfCode Day 4</title>
