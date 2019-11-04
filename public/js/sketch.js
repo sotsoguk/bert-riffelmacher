@@ -1,7 +1,7 @@
 let nSlider, dSlider, fillCheckbox, ctx;
 let rainbow = true;
 let saveButton;
-let n = 8;
+let n = 7;
 let d = 1;
 let col;
 let bcol;
@@ -17,9 +17,16 @@ let anim = false;
 let speed = 0.01;
 
 let limit = 0;
+function windowResized() {
+  let ss = min(windowWidth, windowHeight);
+  resizeCanvas(ss, ss);
+  redraw();
+}
 function setup() {
   // put setup code here
-  ctx = createCanvas(600, 600);
+  let ss = min(windowWidth, windowHeight);
+  ctx = createCanvas(ss, ss);
+  r = height / 2-10;
   ctx.parent('sketch-holder');
   background(200);
   fill(0);
@@ -107,6 +114,7 @@ function drawRose(lim)
   n = nSlider.value();
   w = wSlider.value();
   r = rSlider.value();
+  r = height / 2-10;
   xOffset = xSlider.value();
   yOffset = ySlider.value();
   col = colorPick.color();

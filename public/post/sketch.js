@@ -17,6 +17,9 @@ let anim = false;
 let speed = 0.01;
 
 let limit = 0;
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
 function setup() {
   // put setup code here
   ctx = createCanvas(1200, 1200);
