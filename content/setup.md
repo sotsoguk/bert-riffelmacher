@@ -1,7 +1,7 @@
 ---
 title: "Setup"
 date: 2020-07-31T12:30:57+02:00
-draft: true
+draft: false
 ---
 
 # My Setup
