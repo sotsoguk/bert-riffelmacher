@@ -1,8 +1,8 @@
 baseurl = "https://www.bert-riffelmacher.de"
 title = "bert riffelmacher"
 theme = "hugo-coder"
-languagecode = "de-de"
-defaultcontentlanguage = "de"
+languagecode = "en-en"
+defaultcontentlanguage = "en"
 
 paginate = 20
 canonifyurls = true
@@ -11,11 +11,12 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
+avatarurl = "/images/avatar_sw.jpg"
 #disqusShortname = "yourdiscussshortname"
 
 [params]
     author = "Bert Riffelmacher"
-    info = "Full Stack DevOps and Magician"
+    info = "Computer Science, Math & Photography"
     description = "Bert Riffelmacher's blog and website"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
