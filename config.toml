@@ -64,10 +64,15 @@ avatarurl = "/images/avatar_sw.jpg"
     url  = "/posts/"
 [[menu.main]]
     name = "About"
-    weight = 3
+    weight = 4
     url = "/about/"
 
 [[menu.main]]
     name = "Setup"
     weight = 2
     url ="/setup/"
+
+[[menu.main]]
+    name = "Resumée"
+    weight = 3
+    url = "https://sotsoguk.github.io/markdown-cv/"
