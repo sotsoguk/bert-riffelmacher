@@ -17,14 +17,23 @@
     </item>
     
     <item>
+      <title>About me</title>
+      <link>https://www.bert-riffelmacher.de/about/</link>
+      <pubDate>Fri, 31 Jul 2020 12:30:57 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/about/</guid>
+      <description>LifeEducationMy CV</description>
+    </item>
+    
+    <item>
       <title>Setup</title>
       <link>https://www.bert-riffelmacher.de/setup/</link>
       <pubDate>Fri, 31 Jul 2020 12:30:57 +0200</pubDate>
       
       <guid>https://www.bert-riffelmacher.de/setup/</guid>
-      <description>Mein Setup Eine meiner Lieblingsseiten ist usesthis. Zweimal in der Woche beschreiben dort Menschen aus den verschiedensten Berufen welche Hardware, Software oder sonstige Werkzeuge sie für ihren Beruf oder ihre Leidenschaft benutzen. Deswegen möchte auch ich hier eine kleine Übersicht über meine wichtisten Werkzeuge geben.
+      <description>Mein SetupEine meiner Lieblingsseiten ist usesthis. Zweimal in der Woche beschreiben dort Menschen aus den verschiedensten Berufen welche Hardware, Software oder sonstige Werkzeuge sie für ihren Beruf oder ihre Leidenschaft benutzen. Deswegen möchte auch ich hier eine kleine Übersicht über meine wichtisten Werkzeuge geben.
 One of my favorite blogs i regularaly read is usesthis. jjjj
-Computer Photography Eine meiner großen Leidenschaften, der Fotografie, bin ich mit Beginn der Ausgangsbeschränkungen im Rahmen von Covid-19 wieder stärker nachgegangen.</description>
+ComputerPhotographyEine meiner großen Leidenschaften, der Fotografie, bin ich mit Beginn der Ausgangsbeschränkungen im Rahmen von Covid-19 wieder stärker nachgegangen.</description>
     </item>
     
     <item>
@@ -33,7 +42,7 @@ Computer Photography Eine meiner großen Leidenschaften, der Fotografie, bin ich
       <pubDate>Thu, 13 Jun 2019 12:47:09 +0200</pubDate>
       
       <guid>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</guid>
-      <description>Van-Eck Sequence Recently, i came across a numberphile video about an interesting series, the Van-Eck-Series.~~~~</description>
+      <description>Van-Eck SequenceRecently, i came across a numberphile video about an interesting series, the Van-Eck-Series.~~~~</description>
     </item>
     
   </channel>
