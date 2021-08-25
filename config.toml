@@ -57,6 +57,13 @@ avatarurl = "/images/avatar_sw.jpg"
     weight = 2
     url = "https://twitter.com/sotsoguk/"
 
+[[params.social]]
+    name = "Instagram"
+    icon = "fab fa-instagram fa-2x"
+    weight = 5
+    url = "https://www.instagram.com/sotsoguk/"
+
+
 # Menu links
 [[menu.main]]
     name = "Blog"

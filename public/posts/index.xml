@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on bert riffelmacher</title>
+    <link>https://www.bert-riffelmacher.de/posts/</link>
+    <description>Recent content in Posts on bert riffelmacher</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    <lastBuildDate>Tue, 11 Aug 2020 00:33:24 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Darktable 3.2.(1) released</title>
+      <link>https://www.bert-riffelmacher.de/posts/2020-08-11-darktable-32-released/</link>
+      <pubDate>Tue, 11 Aug 2020 00:33:24 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/2020-08-11-darktable-32-released/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Van Eck Sequence</title>
+      <link>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</link>
+      <pubDate>Thu, 13 Jun 2019 12:47:09 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</guid>
+      <description>Van-Eck Sequence Recently, i came across a numberphile video about an interesting series, the Van-Eck-Series.~~~~</description>
+    </item>
+    
+  </channel>
+</rss>
