@@ -24,7 +24,7 @@ avatarurl = "/images/avatar_sw.jpg"
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
 
-    footercontent = "Come to stay"
+    footercontent = "“Science works!”"
 
     hidecredits = false
     hidecopyright = false
@@ -80,6 +80,6 @@ avatarurl = "/images/avatar_sw.jpg"
     url ="/setup/"
 
 [[menu.main]]
-    name = "Resumée"
+    name = "CV"
     weight = 3
-    url = "https://sotsoguk.github.io/markdown-cv/"
+    url = "/files/cv.pdf"
