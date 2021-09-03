@@ -11,7 +11,7 @@ pygmentsstyle = "monokai"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-avatarurl = "/images/avatar_sw.jpg"
+avatarurl = "/images/av2_bw.jpg"
 #disqusShortname = "yourdiscussshortname"
 
 [params]
@@ -19,7 +19,7 @@ avatarurl = "/images/avatar_sw.jpg"
     info = "Computer Science, Math & Photography"
     description = "Bert Riffelmacher's blog and website"
     keywords = "blog,developer,personal"
-    avatarurl = "images/avatar.jpg"
+    avatarurl = "images/av2_bw.jpg"
 
     favicon_32 = "/img/favicon-32x32.png"
     favicon_16 = "/img/favicon-16x16.png"
