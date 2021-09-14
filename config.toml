@@ -57,6 +57,12 @@ avatarurl = "/images/avatar_sw.jpg"
     weight = 2
     url = "https://twitter.com/sotsoguk/"
 
+# [[params.social]]
+#     name = "Hackerrank"
+#     icon = "fa fa-hackerrank"
+#     weight = 3
+#     url = "https://www.hackerrank.com/sotsoguk"
+    
 [[params.social]]
     name = "Instagram"
     icon = "fa fa-instagram"
