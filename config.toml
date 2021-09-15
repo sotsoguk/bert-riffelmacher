@@ -14,6 +14,10 @@ pygmentscodefencesguesssyntax = true
 avatarurl = "/images/av2_bw.jpg"
 #disqusShortname = "yourdiscussshortname"
 
+[[module.mounts]]
+    source = "static/images/"
+    target = "assets/images/"
+
 [params]
     author = "Bert Riffelmacher"
     info = "Computer Science, Math & Photography"
@@ -89,3 +93,5 @@ avatarurl = "/images/av2_bw.jpg"
     name = "CV"
     weight = 3
     url = "/files/cv.pdf"
+
+
