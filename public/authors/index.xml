@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on bert riffelmacher</title>
+    <link>https://www.bert-riffelmacher.de/authors/</link>
+    <description>Recent content in Authors on bert riffelmacher</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    <lastBuildDate>Thu, 23 Sep 2021 10:24:03 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>bert</title>
+      <link>https://www.bert-riffelmacher.de/authors/bert/</link>
+      <pubDate>Thu, 23 Sep 2021 10:24:03 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/authors/bert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bert Riffelmacher</title>
+      <link>https://www.bert-riffelmacher.de/authors/bert-riffelmacher/</link>
+      <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/authors/bert-riffelmacher/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

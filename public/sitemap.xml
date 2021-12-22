@@ -3,22 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.bert-riffelmacher.de/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
-  </url><url>
-    <loc>https://www.bert-riffelmacher.de/categories/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
-  </url><url>
-    <loc>https://www.bert-riffelmacher.de/categories/darktable/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
-  </url><url>
-    <loc>https://www.bert-riffelmacher.de/posts/2020-08-11-darktable-32-released/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
-  </url><url>
-    <loc>https://www.bert-riffelmacher.de/categories/photography/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
+    <lastmod>2021-11-12T09:37:07+01:00</lastmod>
   </url><url>
     <loc>https://www.bert-riffelmacher.de/posts/</loc>
-    <lastmod>2020-08-11T00:33:24+02:00</lastmod>
+    <lastmod>2021-11-12T09:37:07+01:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/</loc>
+    <lastmod>2021-11-12T09:37:07+01:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/aoc/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/categories/aoc/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/authors/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/authors/bert/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/categories/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/categories/competition/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/puzzles/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/</loc>
+    <lastmod>2021-09-23T10:24:03+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/</loc>
+    <lastmod>2021-09-22T22:41:38+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/posts/2021-09-15-autumn-coming/</loc>
+    <lastmod>2021-09-15T08:20:28+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/instagram/</loc>
+    <lastmod>2021-09-15T08:20:28+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/photography/</loc>
+    <lastmod>2021-09-15T08:20:28+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/categories/photography/</loc>
+    <lastmod>2021-09-15T08:20:28+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/authors/bert-riffelmacher/</loc>
+    <lastmod>2021-09-14T10:31:08+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/dev/</loc>
+    <lastmod>2021-09-14T10:31:08+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/p5js/</loc>
+    <lastmod>2021-09-14T10:31:08+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</loc>
+    <lastmod>2021-09-14T10:31:08+02:00</lastmod>
+  </url><url>
+    <loc>https://www.bert-riffelmacher.de/tags/vscode/</loc>
+    <lastmod>2021-09-14T10:31:08+02:00</lastmod>
   </url><url>
     <loc>https://www.bert-riffelmacher.de/about/</loc>
     <lastmod>2020-07-31T12:30:57+02:00</lastmod>
@@ -26,9 +74,6 @@
     <loc>https://www.bert-riffelmacher.de/setup/</loc>
     <lastmod>2020-07-31T12:30:57+02:00</lastmod>
   </url><url>
-    <loc>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</loc>
-    <lastmod>2019-06-13T12:47:09+02:00</lastmod>
-  </url><url>
-    <loc>https://www.bert-riffelmacher.de/tags/</loc>
+    <loc>https://www.bert-riffelmacher.de/series/</loc>
   </url>
 </urlset>

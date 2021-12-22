@@ -34,7 +34,7 @@ avatarurl = "/images/av2_bw.jpg"
     hidecopyright = false
 
     rtl = false
-
+    # katex = true # maybe for katex
     math = true
     custom_css = ["css/custom.css"]
     # Specify light/dark colorscheme
@@ -94,4 +94,16 @@ avatarurl = "/images/av2_bw.jpg"
     weight = 3
     url = "/files/cv.pdf"
 
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
 
+
+[markup]
+    [markup.highlight]
+        lineNos = true
+        style = "monokai"
+        codeFences = true
+        anchorLineNos = false

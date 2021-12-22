@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bert Riffelmacher on bert riffelmacher</title>
+    <link>https://www.bert-riffelmacher.de/authors/bert-riffelmacher/</link>
+    <description>Recent content in Bert Riffelmacher on bert riffelmacher</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-en</language>
+    <lastBuildDate>Tue, 14 Sep 2021 10:31:08 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/authors/bert-riffelmacher/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Setting up VS Code for p5js</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</link>
+      <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</guid>
+      <description>Setting up Visual Studio Code for p5jsI have always been a great fan of Processing, the Java-based language for creative coding. While I do like programming in Python or c++ much more than Java, it is just nice to open the IDE of processing and start getting creative without setting up complicated frameworks. p5js is like Processing but based on Javascript, and so the sketches can be easily shared without other external dependencies.</description>
+    </item>
+    
+  </channel>
+</rss>

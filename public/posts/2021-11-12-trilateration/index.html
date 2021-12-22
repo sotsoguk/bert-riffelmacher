@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Bert Riffelmacher">
+    <meta name="description" content="TrilaterationThis post is heavily inspired by a problem on Project Lovelace.
+The equation of circle with center $C_i(x_i,y_i)$ and radius $r_i$ is given by $$(x-x_i)^2 &#43; (y-y_i)^2 = r_i^2 .$$ The triangulation problem then equals the problem of computing the intersection point of three circles with centers $C_i$: $$ \begin{align} (x-x_1)^2 &#43; (y-y_1)^2 &amp;= r_1^2 \tag{1}\label{eq1} \\
+(x-x_2)^2 &#43; (y-y_2)^2 &amp;= r_2^2 , \tag{2}\label{eq2}\\
+(x-x_3)^2 &#43; (y-y_3)^2 &amp;= r_3^2 \tag{3}\label{eq3} .">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Trilateration"/>
+<meta name="twitter:description" content="TrilaterationThis post is heavily inspired by a problem on Project Lovelace.
+The equation of circle with center $C_i(x_i,y_i)$ and radius $r_i$ is given by $$(x-x_i)^2 &#43; (y-y_i)^2 = r_i^2 .$$ The triangulation problem then equals the problem of computing the intersection point of three circles with centers $C_i$: $$ \begin{align} (x-x_1)^2 &#43; (y-y_1)^2 &amp;= r_1^2 \tag{1}\label{eq1} \\
+(x-x_2)^2 &#43; (y-y_2)^2 &amp;= r_2^2 , \tag{2}\label{eq2}\\
+(x-x_3)^2 &#43; (y-y_3)^2 &amp;= r_3^2 \tag{3}\label{eq3} ."/>
+
+    <meta property="og:title" content="Trilateration" />
+<meta property="og:description" content="TrilaterationThis post is heavily inspired by a problem on Project Lovelace.
+The equation of circle with center $C_i(x_i,y_i)$ and radius $r_i$ is given by $$(x-x_i)^2 &#43; (y-y_i)^2 = r_i^2 .$$ The triangulation problem then equals the problem of computing the intersection point of three circles with centers $C_i$: $$ \begin{align} (x-x_1)^2 &#43; (y-y_1)^2 &amp;= r_1^2 \tag{1}\label{eq1} \\
+(x-x_2)^2 &#43; (y-y_2)^2 &amp;= r_2^2 , \tag{2}\label{eq2}\\
+(x-x_3)^2 &#43; (y-y_3)^2 &amp;= r_3^2 \tag{3}\label{eq3} ." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-11-12T09:37:07+01:00" />
+<meta property="article:modified_time" content="2021-11-12T09:37:07+01:00" />
+
+
+
+    <title>
+  Trilateration · bert riffelmacher
+</title>
+
+    
+      <link rel="canonical" href="https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/">
+    
+
+    <link rel="preload" href="https://www.bert-riffelmacher.de/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.87.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.bert-riffelmacher.de/">
+      bert riffelmacher
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/setup/">Setup</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/files/cv.pdf">CV</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/">
+              Trilateration
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-11-12T09:37:07&#43;01:00'>
+                November 12, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              One-minute read
+            </span>
+          </div>
+          
+          
+          
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="trilateration">
+  Trilateration
+  <a class="heading-link" href="#trilateration">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>This post is heavily inspired by a problem on Project Lovelace.</p>
+<p>The equation of circle with center $C_i(x_i,y_i)$ and radius $r_i$ is given by 
+$$(x-x_i)^2 + (y-y_i)^2 = r_i^2 .$$ 
+The triangulation problem then equals the problem of computing the intersection point of three circles with centers $C_i$:
+$$
+\begin{align}
+(x-x_1)^2 + (y-y_1)^2  &amp;= r_1^2 \tag{1}\label{eq1} \\<br>
+(x-x_2)^2 + (y-y_2)^2 &amp;= r_2^2 , \tag{2}\label{eq2}\\<br>
+(x-x_3)^2 + (y-y_3)^2 &amp;= r_3^2 \tag{3}\label{eq3} .
+\end{align}
+$$ 
+Distributing the equations yieldss:
+$$\begin{aligned}
+(1) \quad x^2-2x_1x +x_1^2  + y^2-2y_1y+y_1^2  &amp;= r_1^2 \\<br>
+(2) \quad x^2-2x_2x +x_2^2  + y^2-2y_2y+y_2^2  &amp;= r_1^2 \\<br>
+(3) \quad x^2-2x_3x +x_3^2  + y^2-2y_3y+y_3^2  &amp;= r_1^2 \\<br>
+\end{aligned}$$</p>
+<p>In order to solve for $x$ and $y$ we subtract the equation $(1)$ from $(2)$ and $(3)$:
+$$\begin{aligned}
+(2-1) \quad (2x_1-2x_2)x +(2y_1-2y_2)y  &amp;= (d_2^2-d_1^2) - (y_2^2-y_1^2), \<br>
+(3-1) \quad (2x_1-2x_3)x +(2y_1-2y_3)y  &amp;= (d_3^2-d_1^2) - (y_3^2-y_1^2).
+\end{aligned}$$</p>
+<p>Substituting:
+$$\begin{aligned}
+\mathbf{A} &amp;= 2x_1-2x_2,\quad \mathbf{B} =2y_1-2y_2,\quad \mathbf{C} = (d_2^2-d_1^2) - (y_2^2-y_1^2), \<br>
+\mathbf{D} &amp;= 2x_1-2x_3,\quad \mathbf{E} =2y_1-2y_3,\quad \mathbf{F} = (d_3^2-d_1^2) - (y_3^2-y_1^2).
+\end{aligned}$$</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>“Science works!”</p>
+      
+      
+        ©
+        
+        2021
+         Bert Riffelmacher 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://www.bert-riffelmacher.de/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

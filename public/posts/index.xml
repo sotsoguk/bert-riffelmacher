@@ -6,23 +6,55 @@
     <description>Recent content in Posts on bert riffelmacher</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-en</language>
-    <lastBuildDate>Tue, 11 Aug 2020 00:33:24 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 12 Nov 2021 09:37:07 +0100</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Darktable 3.2.(1) released</title>
-      <link>https://www.bert-riffelmacher.de/posts/2020-08-11-darktable-32-released/</link>
-      <pubDate>Tue, 11 Aug 2020 00:33:24 +0200</pubDate>
+      <title>Trilateration</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/</link>
+      <pubDate>Fri, 12 Nov 2021 09:37:07 +0100</pubDate>
       
-      <guid>https://www.bert-riffelmacher.de/posts/2020-08-11-darktable-32-released/</guid>
-      <description></description>
+      <guid>https://www.bert-riffelmacher.de/posts/2021-11-12-trilateration/</guid>
+      <description>TrilaterationThis post is heavily inspired by a problem on Project Lovelace.
+The equation of circle with center $C_i(x_i,y_i)$ and radius $r_i$ is given by $$(x-x_i)^2 + (y-y_i)^2 = r_i^2 .$$ The triangulation problem then equals the problem of computing the intersection point of three circles with centers $C_i$: $$ \begin{align} (x-x_1)^2 + (y-y_1)^2 &amp;amp;= r_1^2 \tag{1}\label{eq1} \\
+(x-x_2)^2 + (y-y_2)^2 &amp;amp;= r_2^2 , \tag{2}\label{eq2}\\
+(x-x_3)^2 + (y-y_3)^2 &amp;amp;= r_3^2 \tag{3}\label{eq3} .</description>
     </item>
     
     <item>
-      <title>Van Eck Sequence</title>
-      <link>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</link>
-      <pubDate>Thu, 13 Jun 2019 12:47:09 +0200</pubDate>
+      <title>Advent Of Code 2015 - Day 02</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/</link>
+      <pubDate>Thu, 23 Sep 2021 10:24:03 +0200</pubDate>
       
-      <guid>https://www.bert-riffelmacher.de/posts/van-eck-sequence/</guid>
-      <description>Van-Eck SequenceRecently, i came across a numberphile video about an interesting series, the Van-Eck-Series.~~~~</description>
+      <guid>https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/</guid>
+      <description>Advent of Code 2015 - Day 02: I Was Told There Would Be No MathDay 02 of the 2015 AoC is again a fairly easy problem.
+Part 11 2 3 4 5 6 7 8 9  The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need.</description>
+    </item>
+    
+    <item>
+      <title>Advent Of Code 2015 - Day 01</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/</link>
+      <pubDate>Wed, 22 Sep 2021 22:41:38 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/</guid>
+      <description>Advent of Code 2015 - Day 01The 2020 Covid-Edition of the Advent of Code, was the first year where I completed all 50 stars. As the days are slowly becoming shorter and colder, I think it&amp;rsquo;s a good idea trying to complete the previous years as coding practice and a preparation for this year&amp;rsquo;s AoC.
+Day 01: Not quite LispPart 1Day 01 is a very easy puzzle to warm you up.</description>
+    </item>
+    
+    <item>
+      <title>Autumn is coming</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-09-15-autumn-coming/</link>
+      <pubDate>Wed, 15 Sep 2021 08:20:28 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/2021-09-15-autumn-coming/</guid>
+      <description>Autumn </description>
+    </item>
+    
+    <item>
+      <title>Setting up VS Code for p5js</title>
+      <link>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</link>
+      <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
+      
+      <guid>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</guid>
+      <description>Setting up Visual Studio Code for p5jsI have always been a great fan of Processing, the Java-based language for creative coding. While I do like programming in Python or c++ much more than Java, it is just nice to open the IDE of processing and start getting creative without setting up complicated frameworks. p5js is like Processing but based on Javascript, and so the sketches can be easily shared without other external dependencies.</description>
     </item>
     
   </channel>

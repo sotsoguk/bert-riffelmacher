@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Bert Riffelmacher">
+    <meta name="description" content="Advent of Code 2015 - Day 02: I Was Told There Would Be No MathDay 02 of the 2015 AoC is again a fairly easy problem.
+Part 11 2 3 4 5 6 7 8 9  The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent Of Code 2015 - Day 02"/>
+<meta name="twitter:description" content="Advent of Code 2015 - Day 02: I Was Told There Would Be No MathDay 02 of the 2015 AoC is again a fairly easy problem.
+Part 11 2 3 4 5 6 7 8 9  The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need."/>
+
+    <meta property="og:title" content="Advent Of Code 2015 - Day 02" />
+<meta property="og:description" content="Advent of Code 2015 - Day 02: I Was Told There Would Be No MathDay 02 of the 2015 AoC is again a fairly easy problem.
+Part 11 2 3 4 5 6 7 8 9  The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-23T10:24:03+02:00" />
+<meta property="article:modified_time" content="2021-09-23T10:24:03+02:00" />
+
+
+
+    <title>
+  Advent Of Code 2015 - Day 02 · bert riffelmacher
+</title>
+
+    
+      <link rel="canonical" href="https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/">
+    
+
+    <link rel="preload" href="https://www.bert-riffelmacher.de/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.87.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.bert-riffelmacher.de/">
+      bert riffelmacher
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/setup/">Setup</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/files/cv.pdf">CV</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.bert-riffelmacher.de/posts/2021-09-24-aoc-2015-day02/">
+              Advent Of Code 2015 - Day 02
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-23T10:24:03&#43;02:00'>
+                September 23, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://www.bert-riffelmacher.de/authors/bert/">bert</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://www.bert-riffelmacher.de/categories/aoc/">aoc</a>
+      <span class="separator">•</span>
+    <a href="https://www.bert-riffelmacher.de/categories/competition/">competition</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://www.bert-riffelmacher.de/tags/aoc/">aoc</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://www.bert-riffelmacher.de/tags/puzzles/">puzzles</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="advent-of-code-2015---day-02-i-was-told-there-would-be-no-math">
+  Advent of Code 2015 - Day 02: I Was Told There Would Be No Math
+  <a class="heading-link" href="#advent-of-code-2015---day-02-i-was-told-there-would-be-no-math">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p><a href="https://adventofcode.com/2015/day/2">Day 02</a> of the <em>2015 AoC</em> is again a fairly easy problem.</p>
+<h3 id="part-1">
+  Part 1
+  <a class="heading-link" href="#part-1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">The elves are running low on wrapping paper, and so they need to submit an order for more. They have a list of the dimensions (length l, width w, and height h) of each present, and only want to order exactly as much as they need.
+
+Fortunately, every present is a box (a perfect right rectangular prism), which makes calculating the required wrapping paper for each gift a little easier: find the surface area of the box, which is 2*l*w + 2*w*h + 2*h*l. The elves also need a little extra paper for each present: the area of the smallest side.
+
+For example:
+
+A present with dimensions 2x3x4 requires 2*6 + 2*12 + 2*8 = 52 square feet of wrapping paper plus 6 square feet of slack, for a total of 58 square feet.
+A present with dimensions 1x1x10 requires 2*1 + 2*10 + 2*10 = 42 square feet of wrapping paper plus 1 square foot of slack, for a total of 43 square feet.
+All numbers in the elves&#39; list are in feet. How many total square feet of wrapping paper should they order?
+</code></pre></td></tr></table>
+</div>
+</div><p>The input to our problem contains the dimensions of packages, with each present box printed on a seperate line:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[...]
+20x3x11
+15x27x5
+6x29x7
+[...]
+</code></pre></td></tr></table>
+</div>
+</div><p>After reading the input, we have to extract the three dimensions (<code>w</code>,<code>h</code>, and <code>l</code>) and convert these numbers to ints. For the <em>extra paper</em>, we need two find the two smallest number out of these three, so in a final preprocessing step the dimensions are sorted.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># read inputFile</span>
+<span style="color:#66d9ef">with</span> open(inputFile) <span style="color:#66d9ef">as</span> f:
+        lines <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read()<span style="color:#f92672">.</span>splitlines()
+
+input_un <span style="color:#f92672">=</span> [list(map(int, l<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;x&#39;</span>))) <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> lines]
+<span style="color:#75715e"># sort numbers</span>
+input <span style="color:#f92672">=</span> [sorted(l) <span style="color:#66d9ef">for</span> l <span style="color:#f92672">in</span> input_un]
+</code></pre></td></tr></table>
+</div>
+</div><p>The data now looks like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">[[3,11,20],[5,15,27],[6,7,29]]
+</code></pre></td></tr></table>
+</div>
+</div><p>For the actual computation, my first idea to <em>pythonic</em> approach was to apply a <code>lambda</code> function to each entry, but list unpacking in lambda function does not work the way I expected; so I applied a named function with the use of the &lsquo;*'-operator to the input.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># function to compute part1</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f1</span>(a, b, c): <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>(a<span style="color:#f92672">*</span>b<span style="color:#f92672">+</span>a<span style="color:#f92672">*</span>c<span style="color:#f92672">+</span>b<span style="color:#f92672">*</span>c)<span style="color:#f92672">+</span>a<span style="color:#f92672">*</span>b
+p1 <span style="color:#f92672">=</span> [f1(<span style="color:#f92672">*</span>i) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> input]
+part1 <span style="color:#f92672">=</span> sum(p1)
+</code></pre></td></tr></table>
+</div>
+</div><p>Since the dimensions are sorted, the computation of smallest area is simply the product of the first two numbers.</p>
+<h3 id="part-2">
+  Part 2
+  <a class="heading-link" href="#part-2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">The elves are also running low on ribbon. Ribbon is all the same width, so they only have to worry about the length they need to order, which they would again like to be exact.
+
+The ribbon required to wrap a present is the shortest distance around its sides, or the smallest perimeter of any one face. Each present also requires a bow made out of ribbon as well; the feet of ribbon required for the perfect bow is equal to the cubic feet of volume of the present. Don&#39;t ask how they tie the bow, though; they&#39;ll never tell.
+
+For example:
+
+A present with dimensions 2x3x4 requires 2+2+3+3 = 10 feet of ribbon to wrap the present plus 2*3*4 = 24 feet of ribbon for the bow, for a total of 34 feet.
+A present with dimensions 1x1x10 requires 1+1+1+1 = 4 feet of ribbon to wrap the present plus 1*1*10 = 10 feet of ribbon for the bow, for a total of 14 feet.
+How many total feet of ribbon should they order?
+</code></pre></td></tr></table>
+</div>
+</div><p>Taking advantage of the sorting of the input for part 1, the second part is now very easy to solve:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># function to compute part2</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">f2</span>(a, b, c): <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>(a<span style="color:#f92672">+</span>b)<span style="color:#f92672">+</span>a<span style="color:#f92672">*</span>b<span style="color:#f92672">*</span>c
+p2 <span style="color:#f92672">=</span> [f2(<span style="color:#f92672">*</span>i) <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> input]
+part2 <span style="color:#f92672">=</span> sum(p2)
+</code></pre></td></tr></table>
+</div>
+</div>
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>“Science works!”</p>
+      
+      
+        ©
+        
+        2021
+         Bert Riffelmacher 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://www.bert-riffelmacher.de/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="color-scheme" content="light dark">
+
+    
+
+    <meta name="author" content="Bert Riffelmacher">
+    <meta name="description" content="Advent of Code 2015 - Day 01The 2020 Covid-Edition of the Advent of Code, was the first year where I completed all 50 stars. As the days are slowly becoming shorter and colder, I think it&rsquo;s a good idea trying to complete the previous years as coding practice and a preparation for this year&rsquo;s AoC.
+Day 01: Not quite LispPart 1Day 01 is a very easy puzzle to warm you up.">
+    <meta name="keywords" content="blog,developer,personal">
+
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Advent Of Code 2015 - Day 01"/>
+<meta name="twitter:description" content="Advent of Code 2015 - Day 01The 2020 Covid-Edition of the Advent of Code, was the first year where I completed all 50 stars. As the days are slowly becoming shorter and colder, I think it&rsquo;s a good idea trying to complete the previous years as coding practice and a preparation for this year&rsquo;s AoC.
+Day 01: Not quite LispPart 1Day 01 is a very easy puzzle to warm you up."/>
+
+    <meta property="og:title" content="Advent Of Code 2015 - Day 01" />
+<meta property="og:description" content="Advent of Code 2015 - Day 01The 2020 Covid-Edition of the Advent of Code, was the first year where I completed all 50 stars. As the days are slowly becoming shorter and colder, I think it&rsquo;s a good idea trying to complete the previous years as coding practice and a preparation for this year&rsquo;s AoC.
+Day 01: Not quite LispPart 1Day 01 is a very easy puzzle to warm you up." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2021-09-22T22:41:38+02:00" />
+<meta property="article:modified_time" content="2021-09-22T22:41:38+02:00" />
+
+
+
+    <title>
+  Advent Of Code 2015 - Day 01 · bert riffelmacher
+</title>
+
+    
+      <link rel="canonical" href="https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/">
+    
+
+    <link rel="preload" href="https://www.bert-riffelmacher.de/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+    
+      
+      
+      <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder.min.708686f8ab8176e91d44fcbe488a0fe0333b94f405cf18a52383d67ba22f0ccb.css" integrity="sha256-cIaG&#43;KuBdukdRPy&#43;SIoP4DM7lPQFzxilI4PWe6IvDMs=" crossorigin="anonymous" media="screen" />
+    
+
+    
+
+    
+      
+        
+        
+        <link rel="stylesheet" href="https://www.bert-riffelmacher.de/css/coder-dark.min.aa883b9ce35a8ff4a2a5008619005175e842bb18a8a9f9cc2bbcf44dab2d91fa.css" integrity="sha256-qog7nONaj/SipQCGGQBRdehCuxioqfnMK7z0Tastkfo=" crossorigin="anonymous" media="screen" />
+      
+    
+
+    
+
+    
+
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://www.bert-riffelmacher.de/images/favicon-16x16.png" sizes="16x16">
+
+    <link rel="apple-touch-icon" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.bert-riffelmacher.de/images/apple-touch-icon.png">
+
+    
+
+    <meta name="generator" content="Hugo 0.87.0" />
+  </head>
+
+  
+  
+    
+  
+  <body class="preload-transitions colorscheme-auto"
+        onload=""
+  >
+    
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+    <main class="wrapper">
+      <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="https://www.bert-riffelmacher.de/">
+      bert riffelmacher
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/setup/">Setup</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/files/cv.pdf">CV</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="https://www.bert-riffelmacher.de/about/">About</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+      <div class="content">
+        
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="https://www.bert-riffelmacher.de/posts/2021-09-23-aoc-2015-day01/">
+              Advent Of Code 2015 - Day 01
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime='2021-09-22T22:41:38&#43;02:00'>
+                September 22, 2021
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3-minute read
+            </span>
+          </div>
+          <div class="authors">
+    <i class="fa fa-user" aria-hidden="true"></i>
+      <a href="https://www.bert-riffelmacher.de/authors/bert/">bert</a></div>
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="https://www.bert-riffelmacher.de/categories/aoc/">aoc</a>
+      <span class="separator">•</span>
+    <a href="https://www.bert-riffelmacher.de/categories/competition/">competition</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="https://www.bert-riffelmacher.de/tags/aoc/">aoc</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="https://www.bert-riffelmacher.de/tags/puzzles/">puzzles</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div>
+        
+        <h1 id="advent-of-code-2015---day-01">
+  Advent of Code 2015 - Day 01
+  <a class="heading-link" href="#advent-of-code-2015---day-01">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h1>
+<p>The 2020 <em>Covid-Edition</em> of the <a href="https://adventofcode.com/">Advent of Code</a>, was the first year where I completed all <strong>50 stars</strong>. As the days are slowly becoming shorter and colder, I think it&rsquo;s a good idea trying to complete the previous years as coding practice and a preparation for this year&rsquo;s <em>AoC</em>.</p>
+<h2 id="day-01-not-quite-lisp">
+  Day 01: Not quite Lisp
+  <a class="heading-link" href="#day-01-not-quite-lisp">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h2>
+<h3 id="part-1">
+  Part 1
+  <a class="heading-link" href="#part-1">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<p><a href="https://adventofcode.com/2015/day/1">Day 01</a> is a very easy puzzle to warm you up.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Santa is trying to deliver presents in a large apartment building, but he can&#39;t find the right floor - 
+the directions he got are a little confusing. He starts on the ground floor (floor 0) and then follows the instructions one character at a time.
+
+An opening parenthesis, (, means he should go up one floor, and a closing parenthesis, ), means he should go down one floor.  
+
+The apartment building is very tall, and the basement is very deep; he will never find the top or bottom floors.
+
+For example:
+
+(()) and ()() both result in floor 0.
+((( and (()(()( both result in floor 3.
+))((((( also results in floor 3.
+()) and ))( both result in floor -1 (the first basement level).
+))) and )())()) both result in floor -3.
+To what floor do the instructions take Santa?
+</code></pre></td></tr></table>
+</div>
+</div><p>We simply have to parse the input, and every <code>(</code> will bring Santa one level up, every <code>)</code> one level down. I try to solve these puzzles in a more <em>pythonic</em> style.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># part1</span>
+    nP <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> c<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;(&#34;</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> lines[<span style="color:#ae81ff">0</span>]]
+    part1 <span style="color:#f92672">=</span> sum(nP)
+</code></pre></td></tr></table>
+</div>
+</div><p>Using list comprehension, the list of brackets is converted to the according numeric value for the change of floor. The solution to the first part is the sum of all these changes.</p>
+<h3 id="part-2">
+  Part 2
+  <a class="heading-link" href="#part-2">
+    <i class="fa fa-link" aria-hidden="true"></i>
+  </a>
+</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-fallback" data-lang="fallback">Now, given the same instructions, find the position of the first character that causes him to enter the basement (floor -1). 
+The first character in the instructions has position 1, the second character has position 2, and so on.
+
+For example:
+
+) causes him to enter the basement at character position 1.
+()()) causes him to enter the basement at character position 5.
+What is the position of the character that causes Santa to first enter the basement?
+</code></pre></td></tr></table>
+</div>
+</div><p>Now we have to find the first time Santa reaches the basement (<strong>level -1</strong>) . Using the list of part 1, we can compute the floor Santa reaches at each step using the partial sums, which <code>itertools.accumulate</code> accomplishes.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"> <span style="color:#75715e"># part1 &amp; 2</span>
+    nP <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span> <span style="color:#66d9ef">if</span> c<span style="color:#f92672">==</span><span style="color:#e6db74">&#34;(&#34;</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span> <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> lines[<span style="color:#ae81ff">0</span>]]
+    aP <span style="color:#f92672">=</span> list(accumulate(nP))
+    part1 <span style="color:#f92672">=</span> aP[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]
+    part2 <span style="color:#f92672">=</span> aP<span style="color:#f92672">.</span>index(<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>As the last entry of the accumulated sums equals the total sum of the list, the <code>sum(np)</code> can be omitted.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+      </footer>
+    </article>
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ['$', '$'], ['\\(', '\\)']
+        ],
+        processEscapes: true,
+        processEnvironments: true
+      },
+      options: {
+        skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+      }
+    };
+  </script>
+  </section>
+
+      </div>
+
+      
+  <footer class="footer">
+    <section class="container">
+      
+        <p>“Science works!”</p>
+      
+      
+        ©
+        
+        2021
+         Bert Riffelmacher 
+      
+      
+         · 
+        Powered by <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+      
+      
+    </section>
+  </footer>
+
+
+    </main>
+
+    
+      
+      <script src="https://www.bert-riffelmacher.de/js/coder.min.03b17769f4f91ae35667e1f2a1ca8c16f50562576cf90ff32b3179926914daa5.js" integrity="sha256-A7F3afT5GuNWZ&#43;HyocqMFvUFYlds&#43;Q/zKzF5kmkU2qU="></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+  </body>
+
+</html>
