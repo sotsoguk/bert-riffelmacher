@@ -1,0 +1,1 @@
+{"rule":"GERMAN_SPELLER_RULE","sentence":"^\\QJetzt läuft Windows 11 auf einem Ryzen 5600x mit 32 GB Ram, und auch wenn mein altes System niemals langsam war, ist das doch ein spürbares Upgrade.\\E$"}
