@@ -2,73 +2,60 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on bert riffelmacher</title>
-    <link>https://www.bert-riffelmacher.de/tags/</link>
+    <link>http://localhost:1313/tags/</link>
     <description>Recent content in Tags on bert riffelmacher</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-en</language>
-    <lastBuildDate>Thu, 23 Sep 2021 10:24:03 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 23 Sep 2021 10:24:03 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>aoc</title>
-      <link>https://www.bert-riffelmacher.de/tags/aoc/</link>
+      <title>Aoc</title>
+      <link>http://localhost:1313/tags/aoc/</link>
       <pubDate>Thu, 23 Sep 2021 10:24:03 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/aoc/</guid>
+      <guid>http://localhost:1313/tags/aoc/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>puzzles</title>
-      <link>https://www.bert-riffelmacher.de/tags/puzzles/</link>
+      <title>Puzzles</title>
+      <link>http://localhost:1313/tags/puzzles/</link>
       <pubDate>Thu, 23 Sep 2021 10:24:03 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/puzzles/</guid>
+      <guid>http://localhost:1313/tags/puzzles/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>instagram</title>
-      <link>https://www.bert-riffelmacher.de/tags/instagram/</link>
+      <title>Instagram</title>
+      <link>http://localhost:1313/tags/instagram/</link>
       <pubDate>Wed, 15 Sep 2021 08:20:28 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/instagram/</guid>
+      <guid>http://localhost:1313/tags/instagram/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>photography</title>
-      <link>https://www.bert-riffelmacher.de/tags/photography/</link>
+      <title>Photography</title>
+      <link>http://localhost:1313/tags/photography/</link>
       <pubDate>Wed, 15 Sep 2021 08:20:28 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/photography/</guid>
+      <guid>http://localhost:1313/tags/photography/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>dev</title>
-      <link>https://www.bert-riffelmacher.de/tags/dev/</link>
+      <title>Dev</title>
+      <link>http://localhost:1313/tags/dev/</link>
       <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/dev/</guid>
+      <guid>http://localhost:1313/tags/dev/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>p5js</title>
-      <link>https://www.bert-riffelmacher.de/tags/p5js/</link>
+      <title>P5js</title>
+      <link>http://localhost:1313/tags/p5js/</link>
       <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/p5js/</guid>
+      <guid>http://localhost:1313/tags/p5js/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>vscode</title>
-      <link>https://www.bert-riffelmacher.de/tags/vscode/</link>
+      <title>Vscode</title>
+      <link>http://localhost:1313/tags/vscode/</link>
       <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/tags/vscode/</guid>
+      <guid>http://localhost:1313/tags/vscode/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

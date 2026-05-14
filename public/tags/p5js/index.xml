@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>p5js on bert riffelmacher</title>
-    <link>https://www.bert-riffelmacher.de/tags/p5js/</link>
-    <description>Recent content in p5js on bert riffelmacher</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <title>P5js on bert riffelmacher</title>
+    <link>http://localhost:1313/tags/p5js/</link>
+    <description>Recent content in P5js on bert riffelmacher</description>
+    <generator>Hugo</generator>
     <language>en-en</language>
-    <lastBuildDate>Tue, 14 Sep 2021 10:31:08 +0200</lastBuildDate><atom:link href="https://www.bert-riffelmacher.de/tags/p5js/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Sep 2021 10:31:08 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/p5js/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Setting up VS Code for p5js</title>
-      <link>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</link>
+      <link>http://localhost:1313/posts/2021-09-14-p5js-vscode/</link>
       <pubDate>Tue, 14 Sep 2021 10:31:08 +0200</pubDate>
-      
-      <guid>https://www.bert-riffelmacher.de/posts/2021-09-14-p5js-vscode/</guid>
-      <description>Setting up Visual Studio Code for p5jsI have always been a great fan of Processing, the Java-based language for creative coding. While I do like programming in Python or c++ much more than Java, it is just nice to open the IDE of processing and start getting creative without setting up complicated frameworks. p5js is like Processing but based on Javascript, and so the sketches can be easily shared without other external dependencies.</description>
+      <guid>http://localhost:1313/posts/2021-09-14-p5js-vscode/</guid>
+      <description>&lt;h1 id=&#34;setting-up-visual-studio-code-for-p5js&#34;&gt;&#xA;  Setting up Visual Studio Code for p5js&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#setting-up-visual-studio-code-for-p5js&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;I have always been a great fan of &lt;a href=&#34;https://processing.org/de/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Processing&lt;/a&gt;, the Java-based language for creative coding. While I do like programming in &lt;code&gt;Python&lt;/code&gt; or &lt;code&gt;c++&lt;/code&gt; much more than &lt;code&gt;Java&lt;/code&gt;, it is just nice to open the IDE of &lt;code&gt;processing&lt;/code&gt; and start getting creative without setting up complicated frameworks. &lt;a href=&#34;https://p5js.org/&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;p5js&lt;/a&gt; is like &lt;em&gt;Processing&lt;/em&gt; but based on &lt;em&gt;Javascript&lt;/em&gt;, and so the &lt;em&gt;sketches&lt;/em&gt; can be easily shared without other external dependencies.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>
